@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <h1>
+      Welcome to {{ title }}!
+  </h1>
+
+  <button 
+  (click)="createComponent('Message Component')"
+  class="btn btn-primary">Add Message Component</button>
+
+  <button 
+  (click)="createHeroComponent('Hero Component')"
+  class="btn btn-primary">Add Herp Component</button>
+
+  <button 
+  (click)="destroyComponent()"
+  class="btn btn-primary">Remove Component</button>
+  
+  <ng-template #herocontainer>
+  </ng-template>
+  <ng-template #messagecontainer>
+  </ng-template>
+</div>
